@@ -5,14 +5,55 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Roboto Thin', sans-serif;
-    font-family: 'Roboto Light', sans-serif;
-    font-family: 'Roboto Medium', sans-serif;
-    font-family: 'Roboto Black', sans-serif; */
-
+    font-family: 'Share Tech Mono', monospace;
 }
 
 body{
-    background-color: #bdbdbd;
+    background-color: #bdbdbd6c;
+}
+
+#board, .boardInfo{
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#start, .boardInfo{
+    font-size: 2rem;
+}
+
+#gameOver{
+    display: none;
+}
+
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#start{
+    background-color: #e55555;
+    border: none;
+    color: #fff;
+    padding: .2rem;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+.emptySquare{
+    background-color: #396797;
+}
+
+.snakeSquare{
+    background-color: #b6dd6c;
+}
+
+.foodSquare{
+    background-color: #e55555;
 }

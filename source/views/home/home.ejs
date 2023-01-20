@@ -5,7 +5,19 @@
     <%- include("../partials/header.ejs")  %>
 
     <main>
-        <h1>PAGINA NUEVA</h1>    
+
+        <div id="board"></div>
+
+        <div class="boardInfo">
+            <div id="score">
+                <p class="score">Score: <span class="scoreSpan"></span> </p>
+            </div>
+            <button id="start">Start</button>
+        </div>
+
+        <div id="gameover">
+            <p>Game Over</p>
+        </div>
     </main>
     
     <%- include("../partials/footer.ejs")  %>
