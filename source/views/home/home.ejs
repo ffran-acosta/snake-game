@@ -5,18 +5,15 @@
     <%- include("../partials/header.ejs")  %>
 
     <main>
-
-        <div id="board"></div>
-
-        <div class="boardInfo">
-            <div id="score">
-                <p class="score">Score: <span class="scoreSpan"></span> </p>
+        <div class="container">
+            <div id="board"></div>
+            <div class="boardInfo">
+                <div>
+                    Score: <div id="scoreBoard"></div>
+                </div>
+                <button id="start">Start</button>
             </div>
-            <button id="start">Start</button>
-        </div>
-
-        <div id="gameover">
-            <p>Game Over</p>
+            <div id="gameOver">Game Over</div>
         </div>
     </main>
     

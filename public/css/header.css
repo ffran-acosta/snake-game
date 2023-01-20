@@ -1,5 +1,12 @@
 #header{
+    display: flex;
     height: 150px;
-    background-color: #444;
+    background-color: #bdbdbd;
     margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
 }

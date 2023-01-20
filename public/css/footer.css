@@ -1,0 +1,13 @@
+footer{
+    padding-top: 2rem;
+    text-align: center;
+}
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer i{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+}
