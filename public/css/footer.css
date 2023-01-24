@@ -2,12 +2,21 @@ footer{
     padding-top: 2rem;
     text-align: center;
 }
-footer a{
+.back a {
     color: #000;
     text-decoration: none;
 }
-
-footer i{
-    padding-bottom: 2rem;
+.back{
+    color: #000;
+    text-decoration: none;
     font-size: 3rem;
+}
+
+.by{
+    padding-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.by a{
+    color: #000;
 }
