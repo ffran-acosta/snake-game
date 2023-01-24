@@ -1,0 +1,18 @@
+<%- include('./partials/head.ejs')  %>
+
+<body>
+
+    <%- include("./partials/headerHome.ejs")  %>
+
+    <nav class="menu">
+        <ul>
+            <li class="submenu"><a id="slow" class="level homeMenu" href="/snake/play">SLOW</a></li>
+            <li class="submenu"><a id="medium" class="level homeMenu" href="/snake/play">MEDIUM</a></li>
+            <li class="submenu"><a id="fast" class="level homeMenu" href="/snake/play">FAST</a></li>
+        </ul>
+    </nav>
+    
+    <%- include("./partials/footerBack.ejs")  %>
+    <script src="/scripts/levels.js"></script>
+</body>
+</html

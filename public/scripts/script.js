@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+    start()
+}); 
 // HTML Elements
 const board = document.getElementById('board');
 const scoreBoard = document.getElementById('scoreBoard');
@@ -6,7 +9,9 @@ const gameOverSign = document.getElementById('gameOver');
 
 // Game settings
 const boardSize = 10;
-const gameSpeed = 100;
+let speed  =  JSON.parse(localStorage.getItem("speed"))
+const gameSpeed = speed[0].speed;
+
 const squareTypes = {
     emptySquare: 0,
     snakeSquare: 1,
@@ -145,11 +150,14 @@ const startGame = () => {
     setGame();
     gameOverSign.style.display = 'none';
     startButton.disabled = true;
-    drawSnake();
+    drawSnake()
     updateScore();
     createRandomFood();
     document.addEventListener('keydown', directionEvent);
     moveInterval = setInterval( () => moveSnake(), gameSpeed);
 }
+    
 
-startButton.addEventListener('click', startGame);
+const start = () => {
+    startButton.addEventListener('click', setTimeout(startGame, 1500));
+}

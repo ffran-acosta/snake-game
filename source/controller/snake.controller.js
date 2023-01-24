@@ -5,6 +5,9 @@ const controller = {
     snake: (req, res) => {
         res.render("game-snake")
     },
+    level: (req, res) => {
+        res.render("levels-snake")
+    },
     score: (req, res) => {
         res.render("score-snake")
     },
