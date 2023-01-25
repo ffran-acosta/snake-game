@@ -7,10 +7,11 @@ const scoreBoard = document.getElementById('scoreBoard');
 const startButton = document.getElementById('start');
 const gameOverSign = document.getElementById('gameOver');
 
+//LOCAL STORAGE
+const ls = JSON.parse(localStorage.game)
 // Game settings
 const boardSize = 10;
-let speed  =  JSON.parse(localStorage.getItem("speed"))
-const gameSpeed = speed[0].speed;
+const gameSpeed = ls[0].speed;
 
 const squareTypes = {
     emptySquare: 0,
@@ -90,6 +91,10 @@ const gameOver = () => {
     gameOverSign.style.display = 'block';
     clearInterval(moveInterval)
     startButton.disabled = false;
+    //LOCAL STORAGE UPDATE
+    let updateLs = ls
+    updateLs[0].score = score;
+    localStorage.setItem('game', JSON.stringify(updateLs))
 }
 
 const setDirection = newDirection => {
@@ -156,8 +161,11 @@ const startGame = () => {
     document.addEventListener('keydown', directionEvent);
     moveInterval = setInterval( () => moveSnake(), gameSpeed);
 }
-    
+
 
 const start = () => {
     startButton.addEventListener('click', startGame);
 }
+
+//ENVIAR AL BACKEND////////////////////////////////////////////////////////////
+

@@ -1,9 +1,12 @@
 const express = require('express');
 const server = express()
 const {join} = require('path');
-
+//
+const cors = require('cors')
 //To save data json
 server.use(express.urlencoded({extended:true}));
+server.use(express.json());
+server.use(cors())
 
 //SERVER
 const {port, start} = require("./modules/server");
