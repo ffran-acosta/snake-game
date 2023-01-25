@@ -16,6 +16,11 @@
             <div id="gameOver">Game Over</div>
         </div>
     </main>
+
+        <form action="/snake/save" method="post">
+            <input type="text" placeholder="Nombre" name="name" required>
+            <button type="submit"> Agregar Score </button>
+        </form>
     
     <%- include("./partials/footerBack.ejs")  %>
 

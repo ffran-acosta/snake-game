@@ -159,5 +159,5 @@ const startGame = () => {
     
 
 const start = () => {
-    startButton.addEventListener('click', setTimeout(startGame, 1500));
+    startButton.addEventListener('click', startGame);
 }

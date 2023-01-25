@@ -2,6 +2,9 @@ const express = require('express');
 const server = express()
 const {join} = require('path');
 
+//To save data json
+server.use(express.urlencoded({extended:true}));
+
 //SERVER
 const {port, start} = require("./modules/server");
 server.listen(port, start());
