@@ -1,18 +1,2 @@
 [
-  {
-    "name": "fran",
-    "score": 10,
-    "level": "fast"
-  },
-  {
-    "level": "slow",
-    "score": 4
-  },
-  {
-    "name": "franco"
-  },
-  {
-    "level": "slow",
-    "score": 4
-  }
 ]

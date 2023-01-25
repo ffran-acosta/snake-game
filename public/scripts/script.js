@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    scoreForm.style.display = 'none';
     start()
 }); 
 // HTML Elements
@@ -6,6 +7,7 @@ const board = document.getElementById('board');
 const scoreBoard = document.getElementById('scoreBoard');
 const startButton = document.getElementById('start');
 const gameOverSign = document.getElementById('gameOver');
+const scoreForm = document.getElementById('scoreForm');
 
 //LOCAL STORAGE
 const ls = JSON.parse(localStorage.game)
@@ -89,6 +91,7 @@ const addFood = () => {
 
 const gameOver = () => {
     gameOverSign.style.display = 'block';
+    scoreForm.style.display = 'block';
     clearInterval(moveInterval)
     startButton.disabled = false;
     //LOCAL STORAGE UPDATE
@@ -141,6 +144,7 @@ const createBoard = () => {
 }
 
 const setGame = () => {
+    
     snake = ['00', '01', '02', '03'];
     score = snake.length - 4;
     direction = 'ArrowRight';

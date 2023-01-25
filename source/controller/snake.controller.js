@@ -13,14 +13,6 @@ const controller = {
     score: (req, res) => {
         res.render("score-snake")
     },
-    save: (req, res) => {
-        let newScore = generate(req.body)
-        console.log(req.body)
-        let allScores = all()
-        allScores.push(newScore)
-        write(allScores)
-        res.render("game-snake")
-    },
     exit: (req, res) => {
         res.redirect("http://localhost:7000/")
     }

@@ -2,7 +2,7 @@ const {Router} = require("express");
 const router = Router();
 const controller = require('../controller/snake.controller');
 
-router.post('/save', controller.save)
+
 router.get('/', controller.home)
 router.get('/level', controller.level)
 router.get('/play', controller.snake)
