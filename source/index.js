@@ -24,4 +24,4 @@ server.use(statics(join(__dirname, "../public")));
 server.use('/snake', require('./routes/snake.routes'))
 
 //API
-
+server.use('/snake/api', require('./routes/api/score.api.routes'))

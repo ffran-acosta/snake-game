@@ -14,8 +14,8 @@ const controller = {
         res.render("score-snake")
     },
     save: (req, res) => {
-        console.log(all())
         let newScore = generate(req.body)
+        console.log(req.body)
         let allScores = all()
         allScores.push(newScore)
         write(allScores)

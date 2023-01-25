@@ -8,11 +8,10 @@ const model = {
         return JSON.parse(data)
     },
     generate: (data) => {        
-        // let level =  JSON.parse(localStorage.getItem("speed"))
         let score = {}
         score.name = data.name
-        // score.level = level[0].level
-        // score.score = data.score
+        score.level = data.level
+        score.score = data.score
         return score
     },
     write: (data) => {
