@@ -1,0 +1,16 @@
+#scoreMain{
+    display: flex;
+    justify-content: center;
+}
+table, th, td {
+    border: 1px solid;
+}
+
+table{
+    width: 50%;
+    text-align: center;
+}
+
+table th{
+    font-size: 1.3rem;
+}

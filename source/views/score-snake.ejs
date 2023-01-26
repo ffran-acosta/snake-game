@@ -4,6 +4,26 @@
 
     <%- include("./partials/header.ejs")  %>
     
+<main id="scoreMain">
+
+    <% if (scores.length > 0) { %>
+        <table class="scoreTable">
+            <tr class="scoreHead">
+
+                <th>Name</th>
+                <th>Score</th>
+                <th>Level</th>
+            </tr>
+            <% scores.forEach(element => { %>
+                <%- include("./partials/scores.ejs", {element:element}) %> 
+            <% }) %>
+        </table>
+    <% } else { %>
+        <h2>NO HAY SCORES</h2>
+    <% } %>
+
+</main>
+
     <%- include("./partials/footerBack.ejs")  %>  
 </body>
 </html>

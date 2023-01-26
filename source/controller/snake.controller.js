@@ -1,4 +1,4 @@
-const {all, write, generate} = require('../models/scores.model');
+const {all} = require("../models/scores.model")
 
 const controller = {
     home: (req, res) => {
@@ -11,7 +11,8 @@ const controller = {
         res.render("levels-snake")
     },
     score: (req, res) => {
-        res.render("score-snake")
+        let scores = all()
+        return res.render('score-snake', {scores})
     },
     exit: (req, res) => {
         res.redirect("http://localhost:7000/")

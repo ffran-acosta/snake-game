@@ -17,12 +17,20 @@
             
             <form id="scoreForm">
                 <input id="name" type="text" placeholder="Nombre" name="name" required>
-                <button id="save" type="submit"> Agregar Score </button>
+                <button id="save" type="submit" > Save score </button>
             </form>
         </div>
     </main>
     
-    <%- include("./partials/footerBack.ejs")  %>
+    <footer>
+        <div class="back">
+            <a class="backIcon" href="/snake/level"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    
+        <div class="by">
+            <p> made with ♥ by <a href="https://github.com/ffran-acosta">Franco Acosta</a> </p>
+        </div>
+    </footer>
 
     <script src="/scripts/script.js"></script> 
     <script src="/scripts/api/score.api.js"></script> 

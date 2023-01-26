@@ -8,7 +8,7 @@ const controller = {
         let allScores = all()
         allScores.push(newScore)
         write(allScores)
-        res.redirect('http://localhost:7003/snake/play')
+        res.render('levels-snake')
     }
 }
 

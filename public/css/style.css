@@ -1,7 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(snake-game.css);
-
+@import url(score.css);
 
 *{
     margin: 0px;
