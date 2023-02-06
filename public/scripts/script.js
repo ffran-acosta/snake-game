@@ -93,7 +93,7 @@ const gameOver = () => {
     gameOverSign.style.display = 'block';
     scoreForm.style.display = 'block';
     clearInterval(moveInterval)
-    startButton.disabled = false;
+    startButton.disabled = true;
     //LOCAL STORAGE UPDATE
     let updateLs = ls
     updateLs[0].score = score;

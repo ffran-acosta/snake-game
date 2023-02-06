@@ -12,7 +12,7 @@ btnSave.addEventListener('click', () => {
 })
 
 const scoreData = async (update) => {
-    const send = await(await fetch('http://localhost:7003/snake/api/score', {
+    await(await fetch('http://localhost:7003/snake/api/score', {
         method: "POST",
         body: update,
         headers: 
