@@ -4,6 +4,7 @@ const btnSave = document.getElementById('save')
 const nameGame = document.getElementById('name')
 
 btnSave.addEventListener('click', () => {
+    //ls: def in script.js
     let updateLs = ls
     updateLs[0].name = nameGame.value
     localStorage.setItem('game', JSON.stringify(updateLs))
