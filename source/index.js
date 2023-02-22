@@ -4,9 +4,9 @@ const {join} = require('path');
 //
 //To save data json and use apis from frontend
 const cors = require('cors')
-server.use(express.urlencoded({extended:true}));
-server.use(express.json());
 server.use(cors())
+server.use(express.json());
+server.use(express.urlencoded({extended:true}));
 
 //SERVER
 const {port, start} = require("./modules/server");
@@ -24,4 +24,4 @@ server.use(statics(join(__dirname, "../public")));
 server.use('/snake', require('./routes/snake.routes'))
 
 //API
-server.use('/snake/api', require('./routes/api/score.api.routes'))
+// server.use('/snake/api', require('./routes/api/score.api.routes'))

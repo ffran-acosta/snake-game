@@ -1,4 +1,4 @@
-const {all} = require("../models/scores.model")
+const pool = require('../data/db-local')
 
 const controller = {
     home: (req, res) => {
@@ -10,9 +10,15 @@ const controller = {
     level: (req, res) => {
         res.render("levels-snake")
     },
-    score: (req, res) => {
-        let scores = all()
-        return res.render('score-snake', {scores})
+    score: async (req, res) => {
+        try {
+            const data = await pool.query('select * from snake_score')
+            const scores = data.rows
+            console.log(scores);
+            res.render("score-snake", {scores})
+        } catch (error) {
+            
+        }
     },
     exit: (req, res) => {
         res.redirect("http://localhost:7000/")

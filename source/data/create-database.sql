@@ -5,4 +5,4 @@ CREATE TABLE snake_score (
     score INT
 )
 
-INSERT INTO products (name, level, score) VALUES ('Fran', 'product.jpg', 10)
+INSERT INTO snake_score (name, level, score) VALUES ('Fran', 'product.jpg', 10)
