@@ -11,6 +11,7 @@
 }
 
 body{
+
     background-color: #bdbdbd;
 }
 
@@ -25,8 +26,10 @@ h1{
 
 .menu{
     display: flex;
-    width: 100%;
     justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
     
 }
 .submenu{
