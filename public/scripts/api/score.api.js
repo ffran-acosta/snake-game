@@ -13,7 +13,7 @@ btnSave.addEventListener('click', () => {
 })
 
 const scoreData = async (update) => {
-    await fetch(process.env.SENDSCORE, {
+    await fetch('https://snake-game.up.railway.app/snake/score/save', {
         method: "POST",
         body: update,
         headers: 
