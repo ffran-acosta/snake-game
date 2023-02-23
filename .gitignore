@@ -3,3 +3,5 @@ node_modules
 
 #Ignora los archivos:
 *-lock.json
+
+.env
