@@ -1,7 +1,8 @@
 const express = require('express');
 const server = express()
 const {join} = require('path');
-//
+//dotenv
+require('dotenv').config()
 //To save data json and use apis from frontend
 const cors = require('cors')
 server.use(cors())
@@ -22,6 +23,3 @@ server.use(statics(join(__dirname, "../public")));
 
 //ROUTES
 server.use('/snake', require('./routes/snake.routes'))
-
-//API
-// server.use('/snake/api', require('./routes/api/score.api.routes'))
