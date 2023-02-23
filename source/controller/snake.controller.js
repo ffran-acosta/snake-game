@@ -1,4 +1,4 @@
-const pool = require('../data/db-local')
+const pool = require('../data/dbRailWay')
 
 const controller = {
     home: (req, res) => {
