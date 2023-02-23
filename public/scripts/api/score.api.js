@@ -13,7 +13,7 @@ btnSave.addEventListener('click', () => {
 })
 
 const scoreData = async (update) => {
-    await fetch(`${process.env.SENDSCORE}/snake/score/save`, {
+    await fetch(`${process.env.SENDSCORE}snake/score/save`, {
         method: "POST",
         body: update,
         headers: 
