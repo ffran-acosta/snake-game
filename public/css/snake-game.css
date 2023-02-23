@@ -1,13 +1,15 @@
-.container{
+.container {
     display: flex;
     width: 90vw;
+    height: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-#board, .boardInfo {
+#board,
+.boardInfo {
     width: 100%;
     max-width: 350px;
 }
@@ -18,7 +20,8 @@
     border: 3px solid #000;
 }
 
-#start, .boardInfo {
+#start,
+.boardInfo {
     font-size: 25px;
 }
 
@@ -53,7 +56,7 @@
 
 .snakeSquare {
     background-color: #85d941;
-    
+
 }
 
 .foodSquare {
