@@ -14,11 +14,13 @@ const controller = {
         try {
             const data = await pool.query('select * from snake_score')
             const scores = data.rows
-            console.log(scores);
             res.render("score-snake", {scores})
         } catch (error) {
-            
+            console.log(error);
         }
+    },
+    scoreSave: (req, res) => { 
+        
     },
     exit: (req, res) => {
         res.redirect("http://localhost:7000/")

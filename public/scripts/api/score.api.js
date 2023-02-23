@@ -13,13 +13,13 @@ btnSave.addEventListener('click', () => {
 })
 
 const scoreData = async (update) => {
-    await(await fetch('http://localhost:7003/snake/api/score', {
+    await fetch('http://localhost:7003/snake/score/save', {
         method: "POST",
         body: update,
         headers: 
             {
                 "Content-Type": "application/json"
             },
-        }))           
+        })          
 }
 
